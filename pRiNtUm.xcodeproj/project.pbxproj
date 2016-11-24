@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AA3FF8A1DE73BA4009EF5D6 /* hsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA3FF891DE73BA4009EF5D6 /* hsViewController.m */; };
 		6AE76B041DE721EC003CEAC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE76B031DE721EC003CEAC3 /* AppDelegate.swift */; };
 		6AE76B061DE721EC003CEAC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE76B051DE721EC003CEAC3 /* ViewController.swift */; };
 		6AE76B091DE721EC003CEAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE76B071DE721EC003CEAC3 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AA3FF881DE73BA4009EF5D6 /* hsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hsViewController.h; sourceTree = "<group>"; };
+		6AA3FF891DE73BA4009EF5D6 /* hsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hsViewController.m; sourceTree = "<group>"; };
 		6AE76B001DE721EC003CEAC3 /* pRiNtUm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pRiNtUm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE76B031DE721EC003CEAC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AE76B051DE721EC003CEAC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		6AE76B221DE721EC003CEAC3 /* pRiNtUmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pRiNtUmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE76B261DE721EC003CEAC3 /* pRiNtUmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pRiNtUmUITests.swift; sourceTree = "<group>"; };
 		6AE76B281DE721EC003CEAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF529EF1DE7391800E2BFF8 /* pRiNtUm-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pRiNtUm-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,9 @@
 				6AE76B0F1DE721EC003CEAC3 /* LaunchScreen.storyboard */,
 				6AE76B121DE721EC003CEAC3 /* Info.plist */,
 				6AE76B0A1DE721EC003CEAC3 /* pRiNtUm.xcdatamodeld */,
+				6AF529EF1DE7391800E2BFF8 /* pRiNtUm-Bridging-Header.h */,
+				6AA3FF881DE73BA4009EF5D6 /* hsViewController.h */,
+				6AA3FF891DE73BA4009EF5D6 /* hsViewController.m */,
 			);
 			path = pRiNtUm;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				TargetAttributes = {
 					6AE76AFF1DE721EC003CEAC3 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					6AE76B161DE721EC003CEAC3 = {
@@ -265,6 +273,7 @@
 				6AE76B0C1DE721EC003CEAC3 /* pRiNtUm.xcdatamodeld in Sources */,
 				6AE76B061DE721EC003CEAC3 /* ViewController.swift in Sources */,
 				6AE76B041DE721EC003CEAC3 /* AppDelegate.swift in Sources */,
+				6AA3FF8A1DE73BA4009EF5D6 /* hsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,10 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = pRiNtUm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JoyDa.pRiNtUm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pRiNtUm/pRiNtUm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,10 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = pRiNtUm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JoyDa.pRiNtUm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pRiNtUm/pRiNtUm-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -509,6 +523,7 @@
 				6AE76B2D1DE721EC003CEAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AE76B2E1DE721EC003CEAC3 /* Build configuration list for PBXNativeTarget "pRiNtUmTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +532,7 @@
 				6AE76B301DE721EC003CEAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AE76B311DE721EC003CEAC3 /* Build configuration list for PBXNativeTarget "pRiNtUmUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +541,7 @@
 				6AE76B331DE721EC003CEAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
